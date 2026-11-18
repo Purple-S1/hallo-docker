@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hallo Docker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="kaart">
+        <h1>🐳 Hallo Docker!</h1>
+        <p class="sub">Dit programma draait in een Docker-container · versie {{ info.versie }}</p>
+
+        <table>
+            <tr><th>Hostnaam (container-ID)</th><td>{{ info.hostnaam }}</td></tr>
+            <tr><th>Omgeving</th><td>{{ info.omgeving }}</td></tr>
+            <tr><th>Besturingssysteem</th><td>{{ info.besturingssysteem }}</td></tr>
+            <tr><th>Processor</th><td>{{ info.processor }}</td></tr>
+            <tr><th>Python-versie</th><td>{{ info.python_versie }}</td></tr>
+            <tr><th>Tijd in de container</th><td>{{ info.tijd }}</td></tr>
+        </table>
+
+        <p class="teller">Deze pagina is <strong>{{ bezoeken }}</strong> keer bezocht sinds de container is gestart.</p>
+
+        <p class="links">
+            <a href="/api/info">/api/info</a> · <a href="/health">/health</a>
+        </p>
+        <footer>Voorbeeldproject VS07 · Sven Teuben</footer>
+    </main>
+</body>
+</html>

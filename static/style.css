@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8f0fe;
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    color: #1f2937;
+}
+
+.kaart {
+    background: #ffffff;
+    padding: 32px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 560px;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    color: #1d63ed;
+}
+
+.sub {
+    margin-top: 4px;
+    color: #6b7280;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    color: #6b7280;
+    font-weight: normal;
+    width: 45%;
+}
+
+.teller {
+    background: #eef3fd;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+a {
+    color: #1d63ed;
+}
+
+footer {
+    margin-top: 24px;
+    font-size: 13px;
+    color: #9ca3af;
+}
