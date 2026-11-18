@@ -6,7 +6,7 @@ from datetime import datetime
 
 from flask import Flask, jsonify, render_template
 
-VERSIE = "1.0"
+VERSIE = "1.1"
 
 app = Flask(__name__)
 
